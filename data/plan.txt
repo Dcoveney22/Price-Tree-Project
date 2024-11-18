@@ -1,0 +1,19 @@
+// Set up CSV file with data of the EX WORKS price
+
+// Set up postgreSQL Database on local system
+
+// Push CSV into new TABLE on DATABASE
+
+// Create starting typescript files / github etc. 
+
+// Create product class
+
+//  Create function to draw CSV file into the new program so it is usable as an array of objects
+
+// Create a new function which will take each product and add the duty cost to each one
+
+// Create a new function which will take each product and add all the other fixed costs to each one (as detailed above)
+
+// Create a new function which will then take that final price and add on the each markets % and then send the final prices to a file
+
+// Create a new function which will then check the pricing based on the sales criteria and then send out a separate file showing the products which prices will need to be reviewed. 
