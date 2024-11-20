@@ -12,7 +12,7 @@ export class SKU {
     Brand: string,
     SKU_Name: string,
     Category: string,
-    Price: string,
+    Segment: string,
     Import_Country: string,
     ABV: string,
     Size_CL: string,
@@ -21,7 +21,7 @@ export class SKU {
     this.Brand = Brand;
     (this.SKU_Name = SKU_Name),
       (this.Category = Category),
-      (this.Segment = Price),
+      (this.Segment = Segment),
       (this.Import_Country = Import_Country),
       (this.ABV = ABV),
       (this.Size_CL = Size_CL),
