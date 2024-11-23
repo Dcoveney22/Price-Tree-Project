@@ -29,7 +29,7 @@ export class InventoryPackDB {
           inventoryData.segment,
           inventoryData.import_country,
           inventoryData.abv,
-          inventoryData.size_cL,
+          inventoryData.size_cl,
           inventoryData.exworks_price
         )
       );
