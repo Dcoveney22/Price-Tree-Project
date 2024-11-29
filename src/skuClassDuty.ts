@@ -1,3 +1,6 @@
+//EXTEND CLASS FROM SUPER CLASS
+//Check Superlclass work
+
 export class SKUduty {
   Brand: string;
   SKU_Name: string;
@@ -8,6 +11,7 @@ export class SKUduty {
   Size_CL: string;
   ExWorks_Price: string;
   Duty: number;
+  SalePrice;
 
   constructor(
     Brand: string,

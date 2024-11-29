@@ -1,3 +1,5 @@
+//Make super class?? With NULL properties.
+
 export class SKU {
   Brand: string;
   SKU_Name: string;
@@ -7,6 +9,8 @@ export class SKU {
   ABV: string;
   Size_CL: string;
   ExWorks_Price: string;
+  Duty: number;
+  Sale_Price: number;
 
   constructor(
     Brand: string,
@@ -16,16 +20,20 @@ export class SKU {
     Import_Country: string,
     ABV: string,
     Size_CL: string,
-    ExWorks_Price: string
+    ExWorks_Price: string,
+    Duty: number,
+    Sale_Price: number
   ) {
     this.Brand = Brand;
-    (this.SKU_Name = SKU_Name),
-      (this.Category = Category),
-      (this.Segment = Segment),
-      (this.Import_Country = Import_Country),
-      (this.ABV = ABV),
-      (this.Size_CL = Size_CL),
-      (this.ExWorks_Price = ExWorks_Price);
+    this.SKU_Name = SKU_Name;
+    this.Category = Category;
+    this.Segment = Segment;
+    this.Import_Country = Import_Country;
+    this.ABV = ABV;
+    this.Size_CL = Size_CL;
+    this.ExWorks_Price = ExWorks_Price;
+    this.Duty = Duty;
+    this.Sale_Price = Sale_Price;
   }
 }
 

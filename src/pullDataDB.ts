@@ -1,5 +1,6 @@
 import { Client } from "pg";
 import { SKU } from "./skuClass";
+import { CleanUpData } from "./dataClean";
 
 export class InventoryPackDB {
   inventoryDataArray: SKU[] = [];
@@ -17,7 +18,7 @@ export class InventoryPackDB {
     await this.getInventoryDB();
     await this.client.end();
   }
-
+  //convert and clean up the data into numbers
   async getInventoryDB() {
     const res = await this.client.query("SELECT * FROM priceTreeInventory");
     res.rows.forEach((inventoryData) => {
@@ -30,7 +31,9 @@ export class InventoryPackDB {
           inventoryData.import_country,
           inventoryData.abv,
           inventoryData.size_cl,
-          inventoryData.exworks_price
+          inventoryData.exworks_price,
+          inventoryData.duty,
+          inventoryData.sale_price
         )
       );
     });
