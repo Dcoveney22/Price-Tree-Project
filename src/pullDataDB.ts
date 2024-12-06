@@ -31,9 +31,9 @@ export class InventoryPackDB {
           inventoryData.import_country,
           inventoryData.abv,
           inventoryData.size_cl,
-          inventoryData.exworks_price,
-          inventoryData.duty,
-          inventoryData.sale_price
+          inventoryData.exworks_price
+          // inventoryData.duty,
+          // inventoryData.sale_price
         )
       );
     });

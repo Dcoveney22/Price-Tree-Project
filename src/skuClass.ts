@@ -6,11 +6,11 @@ export class SKU {
   Category: string;
   Segment: string;
   Import_Country: string;
-  ABV: string;
+  ABV: number;
   Size_CL: string;
   ExWorks_Price: string;
-  Duty: number;
-  Sale_Price: number;
+  // Duty: number;
+  // Sale_Price: number;
 
   constructor(
     Brand: string,
@@ -18,11 +18,11 @@ export class SKU {
     Category: string,
     Segment: string,
     Import_Country: string,
-    ABV: string,
+    ABV: number,
     Size_CL: string,
-    ExWorks_Price: string,
-    Duty: number,
-    Sale_Price: number
+    ExWorks_Price: string
+    // Duty: number,
+    // Sale_Price: number
   ) {
     this.Brand = Brand;
     this.SKU_Name = SKU_Name;
@@ -32,8 +32,8 @@ export class SKU {
     this.ABV = ABV;
     this.Size_CL = Size_CL;
     this.ExWorks_Price = ExWorks_Price;
-    this.Duty = Duty;
-    this.Sale_Price = Sale_Price;
+    // this.Duty = Duty;
+    // this.Sale_Price = Sale_Price;
   }
 }
 

@@ -12,16 +12,16 @@ export class DutyCalculator {
     // console.log(cleanData);
     for (let x = 0; x < cleanData.length; x++) {
       if (cleanData[x].ABV <= 22) {
-        let calcLow = (29.54 / 100) * cleanData[x].abv * cleanData[x].size_cl;
+        let calcLow = (29.54 / 100) * cleanData[x].ABV * cleanData[x].Size_Cl;
         cleanData[x].Duty = calcLow;
         cleanData[x].Sale_Price =
-          cleanData[x].ExWorks_Price + cleanData[x].duty;
+          cleanData[x].ExWorks_Price + cleanData[x].Duty;
       }
       if (cleanData[x].ABV > 22) {
-        let calcHigh = (32.79 / 100) * cleanData[x].abv * cleanData[x].size_cl;
+        let calcHigh = (32.79 / 100) * cleanData[x].ABV * cleanData[x].Size_Cl;
         cleanData[x].Duty = calcHigh;
         cleanData[x].Sale_Price =
-          cleanData[x].ExWorks_Price + cleanData[x].duty;
+          cleanData[x].ExWorks_Price + cleanData[x].Duty;
       }
       // console.log(cleanData);
       this.newInventory.push(cleanData);

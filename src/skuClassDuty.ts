@@ -11,7 +11,7 @@ export class SKUduty {
   Size_CL: string;
   ExWorks_Price: string;
   Duty: number;
-  SalePrice;
+  Sale_Price: number;
 
   constructor(
     Brand: string,
