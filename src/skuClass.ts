@@ -7,8 +7,8 @@ export class SKU {
   Segment: string;
   Import_Country: string;
   ABV: number;
-  Size_CL: string;
-  ExWorks_Price: string;
+  Size_CL: number;
+  ExWorks_Price: number;
   Duty: number;
   Sale_Price: number;
 
@@ -19,8 +19,8 @@ export class SKU {
     Segment: string,
     Import_Country: string,
     ABV: number,
-    Size_CL: string,
-    ExWorks_Price: string,
+    Size_CL: number,
+    ExWorks_Price: number,
     Duty: number,
     Sale_Price: number
   ) {

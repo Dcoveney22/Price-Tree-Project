@@ -25,7 +25,7 @@ export class DutyCalculator {
       }
       this.newInventory.push(cleanData[x]);
       // console.log(cleanData);
-      console.log(this.newInventory);
+      // console.log(this.newInventory);
     }
   }
 }

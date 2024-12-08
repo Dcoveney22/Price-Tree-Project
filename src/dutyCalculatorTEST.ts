@@ -46,7 +46,7 @@ export class DutyCalculator {
         this.cleanData[x].Sale_Price =
           this.cleanData[x].ExWorks_Price + this.cleanData[x].Duty;
       }
-      this.newInventory.push(this.cleanData);
+      this.newInventory.push(this.cleanData[x]);
       //   console.log(this.cleanData);
       console.log(this.newInventory);
     }
