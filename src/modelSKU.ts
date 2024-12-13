@@ -1,14 +1,14 @@
 //Make super class?? With NULL properties.
 
-export class CleanSKU {
+export class InputSKU {
   Brand: string;
   SKU_Name: string;
   Category: string;
   Segment: string;
   Import_Country: string;
-  ABV: number;
-  Size_CL: number;
-  ExWorks_Price: number;
+  ABV: string;
+  Size_CL: string;
+  ExWorks_Price: string;
 
   constructor(
     Brand: string,
@@ -16,9 +16,9 @@ export class CleanSKU {
     Category: string,
     Segment: string,
     Import_Country: string,
-    ABV: number,
-    Size_CL: number,
-    ExWorks_Price: number
+    ABV: string,
+    Size_CL: string,
+    ExWorks_Price: string
   ) {
     this.Brand = Brand;
     this.SKU_Name = SKU_Name;

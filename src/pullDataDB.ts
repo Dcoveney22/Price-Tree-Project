@@ -1,9 +1,10 @@
 import { Client } from "pg";
 import { SKU } from "./skuClass";
 import { CleanUpData } from "./dataClean";
+import { InputSKU } from "./modelSKU";
 
 export class InventoryPackDB {
-  inventoryDataArray: SKU[] = [];
+  inventoryDataArray: InputSKU[] = [];
 
   client = new Client({
     host: "127.0.0.1",
@@ -23,7 +24,7 @@ export class InventoryPackDB {
     const res = await this.client.query("SELECT * FROM priceTreeInventory");
     res.rows.forEach((inventoryData) => {
       this.inventoryDataArray.push(
-        new SKU(
+        new InputSKU(
           inventoryData.brand,
           inventoryData.sku_name,
           inventoryData.category,
@@ -31,9 +32,7 @@ export class InventoryPackDB {
           inventoryData.import_country,
           inventoryData.abv,
           inventoryData.size_cl,
-          inventoryData.exworks_price,
-          0,
-          0
+          inventoryData.exworks_price
         )
       );
     });
